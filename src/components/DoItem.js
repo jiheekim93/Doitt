@@ -11,7 +11,7 @@ const DoItem = (props) => {
   return (
     <>
       <DoDates date={props.date} />
-      <h3>{title}</h3>
+      <h3>{props.title}</h3>
       <button onClick={clickHandler}>Change Title</button>
     </>
   );

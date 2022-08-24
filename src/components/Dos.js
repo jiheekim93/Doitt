@@ -13,9 +13,12 @@ const Dos = (props) => {
   return (
     <>
       <DoFilter mainYear={year} onFilterChange={filterChangeHandler} />
-      <DoItem title={props.items[0].title} date={props.items[0].date} />
+      {props.items.map((dos, index) => (
+        <DoItem key={index} title={dos.title} date={dos.date} />
+      ))}
+      {/* <DoItem title={props.items[0].title} date={props.items[0].date} />
       <DoItem title={props.items[1].title} date={props.items[1].date} />
-      <DoItem title={props.items[2].title} date={props.items[2].date} />
+      <DoItem title={props.items[2].title} date={props.items[2].date} /> */}
     </>
   );
 };
