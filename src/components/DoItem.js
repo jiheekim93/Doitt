@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import DoDates from "./DoDates";
 
-const DoLists = (props) => {
+const DoItem = (props) => {
   const [title, setTitle] = useState(props.title);
 
   const clickHandler = () => {
@@ -17,4 +17,4 @@ const DoLists = (props) => {
   );
 };
 
-export default DoLists;
+export default DoItem;
